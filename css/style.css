@@ -1,0 +1,154 @@
+@font-face {
+    font-family: chequeBlack;
+    src: url(fonts/Cheque-Black.otf);
+}
+
+@font-face {
+    font-family: chequeRegular;
+    src: url(fonts/Cheque-Regular.otf);
+}
+
+@font-face {
+    font-family: ginebra;
+    src: url(fonts/ginebra_font.ttf);
+}
+
+@font-face {
+    font-family: butlerUltraLight;
+    src: url(fonts/Butler_and_ButlerStencil/Butler/Butler_Ultra_Light.otf);
+}
+
+@font-face {
+    font-family: butlerRegular;
+    src: url(fonts/Butler_and_ButlerStencil/Butler/Butler_Regular.otf);
+}
+
+.header {
+    padding: 10px; /* some padding */
+    text-align: center; /* center the text */
+    background: #7BCCB5; /* green background */
+    color: black; /* white text color */
+}
+
+.navbar {
+    font-family: butlerRegular;
+    font-size: 20px;
+}
+
+.header {
+    font-family: butlerUltraLight;
+    font-size: 20px;
+}
+
+.header h1 {
+    font-family: chequeRegular;
+    font-size: 100px;
+}
+
+.main h1 {
+    text-align: center;
+    font-family: chequeBlack;
+    font-size: 70px;
+}
+
+.main h2 {
+    text-align: center;
+    font-family: ginebra;
+    font-size: 40px;
+}
+
+.main {
+    font-family: butlerUltraLight;
+    font-size: 40px;
+}
+
+.footer {
+    font-family: butlerUltraLight;
+    font-size: 20px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden; /* Hide overflow */
+    background-color: #FA8072; /* Dark background color */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left; /* Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    color: black; /* Black text color */
+    text-align: center; /* Center the text */
+    padding: 14px 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+    background-color: #ddd; /* Grey background color */
+    color: black; /* Black text color */
+}
+
+/* Column container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 30%; /* Set the width of the sidebar */
+    background-color: #f1f1f1; /* Grey background color */
+    padding: 20px; /* Some padding */
+}
+
+/* Main column */
+.main {
+    flex: 70%; /* Set the width of the main content */
+    background-color: white; /* White background color */
+    padding: 20px; /* Some padding */
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+.responsive-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+ }
+
+ .main {
+     padding: 20px 100px 100px 100px;
+ }
+
+/*
+  .main h2 {
+      padding: 10px 10px 10px 55px;
+  }
+*/
+
+.footer {
+    padding: 5px; /* Some padding */
+    text-align: center; /* Center text*/
+    background: #FA8072; /* Grey background */
+}
